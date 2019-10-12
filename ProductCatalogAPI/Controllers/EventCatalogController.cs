@@ -14,11 +14,11 @@ namespace ProductCatalogAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CatalogController : ControllerBase
+    public class EventCatalogController : ControllerBase
     {
         private readonly CatalogContext _context;
         private readonly IConfiguration _config;
-        public CatalogController(CatalogContext context, 
+        public EventCatalogController(CatalogContext context, 
             IConfiguration config)
         {
             _context = context;
